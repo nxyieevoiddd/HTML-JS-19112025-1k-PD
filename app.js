@@ -11,6 +11,7 @@ let sum =0;
 let mass =0;
 let sum2 =0;
 let sum3
+let Li =0 ;
 function handleClick(){
     sum =    heightInput.value/100 ;
     sum2 = weightInput.value / sum ;
@@ -18,7 +19,8 @@ function handleClick(){
     sum3 > sum2 ;
     sum3=(sum2 ,"nav pietiekama svara")
     outputContainer.innerHTML = `Jūsu ķmi ir : ${sum2} `   ;
+    let historyListItem = document.createElement('Li');
+    Li = outputContainer.value;
+    historyList.innerHTML = `Jūsu ķmi ir : ${sum2.value} ${weightInput.value} kg ${heightInput.value} cm`;
+    historyList.appendChild(outputContainer.value);
 }
-let historyListItem = document.createElement('li');
-historyListItem.innerHTML = `Jūsu ķmi ir : ${sum2.value}`;
-historyList.appendChild(historyListItem);
